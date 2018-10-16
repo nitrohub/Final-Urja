@@ -31,7 +31,7 @@
   <li><a href="../Logout.php">logout</a></li>
 
   <li><a href="../Extra/contact.html">Contact</a></li>
-  <li><a href="../Extra/Sponsors.html">Sponcers</a></li>
+  <li><a href="../Extra/Sponsors.html">Sponsors</a></li>
   <li><a href="../Event/LoggedEvent.php">Events</a></li>
   <li><a href="#">Home</a></li>
 
@@ -71,17 +71,20 @@ if(isset($_SESSION['name'])){//for register ka message
   </thead>
     <?php
 include('../db/udb.php');
-if(isset($_SESSION['s_id']))
+if(isset($_SESSION['s_id'])) //For login
 {
 $s_id=$_SESSION['s_id'];
 echo $s_id.'';
-}else if(isset($_SESSION['id']))
+}else if(isset($_SESSION['id'])) //For Register
 {
 $s_id=$_SESSION['id'];
 echo $s_id.'';
 }
 $query="SELECT * FROM registration WHERE S_id='$s_id' ";
 $result=mysqli_query($con,$query);
+if($con->error){
+  die($con->error);
+}
 while($row=mysqli_fetch_array($result))
 {
   $E_id = $row['E_id'];

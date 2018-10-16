@@ -25,7 +25,7 @@
 <ul>
   <li><a href="../Register.php">Sign up</a></li>
   <li><a href="../Extra/contact.html">Contact</a></li>
-  <li><a href="../Extra/Sponsors.html">Sponcers</a></li>
+  <li><a href="../Extra/Sponsors.html">Sponsors</a></li>
   <li><a href="../Event/Event.php">Events</a></li>
   <li><a href="../student/HOME PAGE.php">Home</a></li>
 

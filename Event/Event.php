@@ -11,10 +11,15 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/HOME PAGE.css">
+<link rel="stylesheet" href="../css/EVENT.css">
 
 <title>EVENTS</title>
 </head>
+<!-- <style type="text/css">
+  h2{
+    color:yellow;
+  }
+</style> -->
 <body class="bod">
 <div>
 <img src="../images/kjsce logo.png" alt="college image" height="100" width ="100" ALIGN="left" >
@@ -25,7 +30,7 @@
 <ul>
   <li><a href="../Register.php">Sign up</a></li>
   <li><a href="../Extra/contact.html">Contact</a></li>
-  <li><a href="../Extra/Sponsors.html">Sponcers</a></li>
+  <li><a href="../Extra/Sponsors.html">Sponsors</a></li>
   <li><a href="../Event/Event.php">Events</a></li>
   <li><a href="../student/HOME PAGE.php">Home</a></li>
 

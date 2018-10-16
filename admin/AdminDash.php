@@ -31,7 +31,7 @@
   <li><a href="../Logout.php">logout</a></li>
 
   <li><a href="../Extra/contact.html">Contact</a></li>
-  <li><a href="../Extra/Sponsors.html">Sponcers</a></li>
+  <li><a href="../Extra/Sponsors.html">Sponsors</a></li>
   <li><a href="../Event/LoggedEvent.php">Events</a></li>
   <li><a href="#">Home</a></li>
 
@@ -116,23 +116,53 @@ while($row=mysqli_fetch_array($result))
   }
 }
 ?>
+
 </table>
+<a href="../Register.php" class="btn btn-success btn-lg">Add Student?</a>
 </div>
-<!-- <table border="4" style="padding :2px;" align="center">
-	<tr>
-		<th>1</th>
-		<td><a>Insert Student Details</a></td>
-	</tr>
-	<tr>
-		<th>2</th>
-		<td><a>Update Student Details</a></td>
-	</tr>
-	<tr>
-		<th>3</th>
-		<td><a >Delete Student Details</a></td>
-	</tr>
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+  <?php
+  // $quer="SELECT * FROM student";
+// $res=mysqli_query($con,$quer);
+?><table><?php
+// while($ro=mysqli_fetch_array($res))
+{
+  // $id = $ro['S_id'];
+  // $nme=$ro['S_name'];
+  
+  // echo "<tr>";
+  // echo "<td>".$ro['S_id']."</td>";
+  // echo "<td>".$ro['S_name']."</td>";
+  // echo "<td><a href='StudentUnregister' class='btn btn-danger'>UnRegister</a></td>";
+
+  // if(isset($_POST['unregister']))
+  // {
+  //   $_SESSION['unregister']=$row['E_id'];
+  //   ('Location:unregister.php');
+  // }
+}
+?>
+
 </table>
 </div> -->
+
+
+
+
+
+
+
+
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">

@@ -28,7 +28,7 @@ session_start();
 <ul>
 	<li><a href="../Logout.php">logout</a></li>
   <li><a href="../Extra/contact.html">Contact</a></li>
-  <li><a href="../Extra/Sponsors.html">Sponcers</a></li>
+  <li><a href="../Extra/Sponsors.html">Sponsors</a></li>
   <li><a href="../Event/LoggedEvent.php">Events</a></li>
   <li><a href="../student/LoggedinHome.php">Home</a></li>
 

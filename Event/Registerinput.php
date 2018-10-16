@@ -6,7 +6,13 @@ if(isset($_POST["Car"]))
 	// echo "string";
 	$Ename="Car Mela";
 	$E_id=1;
+    if(isset($_SESSION['s_id']))
+    {
 	$S_id=$_SESSION['s_id'];
+    }elseif (isset($_SESSION['id']))
+     {
+       $S_id=$_SESSION['id'];
+                  }
     // echo "Session id=".$S_id.'';
 	$uery = "SELECT * FROM registration where E_id ='$E_id'"; //For checking if the event is already registered
     $esult= mysqli_query($con, $uery);
@@ -20,14 +26,13 @@ if(isset($_POST["Car"]))
 		}
 		else
 		{
-	$query ="INSERT INTO registration(E_id,Ename,S_id) VALUES ('$E_id','$Ename','$S_id')";
+            // die($S_id);
+	$query ="INSERT INTO registration(E_id,Ename,S_id) VALUES ($E_id,'$Ename','$S_id')";
     $result=mysqli_query($con, $query);
     if($con->error){
     	die("Already Registered!!");
-
-		  }
-	
-       }
+     }
+   }
     $Pid=1;
     $query1="INSERT INTO payment(Pay_id,S_id) VALUES ('$Pid','S_id')";
     $result1=mysqli_query($con,$query1);
@@ -168,7 +173,7 @@ if(isset($_POST['GameDev']))
 		{
 		    header('location: ../student/Dashboard1.php');
 		}else{
-$query ="INSERT INTO registration (E_id,Ename,S_id) VALUES ('$E_id', '$Ename','$S_id')";
+$query ="INSERT INTO registration (E_id,Ename,S_id) VALUES ($E_id, '$Ename','$S_id')";
     $result= mysqli_query($con, $query);
     if($con->error){
     	die("$con->error");
