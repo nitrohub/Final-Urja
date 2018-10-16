@@ -1,0 +1,26 @@
+{
+  "name": "ci_bootstrap_3",
+  "version": "0.1.0",
+  "homepage": "https://github.com/waifung0207/ci_bootstrap_3",
+  "authors": [
+    "Michael Chan <waifung.hk>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "admin-lte": "2.3.11",
+    "bootstrap": "3.3.7",
+    "font-awesome": "4.7.0",
+    "ionicons": "2.0.1",
+    "jquery-legacy": "jquery#1.12.4",
+    "jquery-migrate": "1.4.0",
+    "Sortable": "1.4.2",
+    "spectrum": "1.8.0"
+  }
+}

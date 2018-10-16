@@ -1,0 +1,10 @@
+{
+    "name": "ci_bootstrap_3",
+    "require": {
+        "firebase/php-jwt": "^3.0",
+        "google/recaptcha": "~1.1",
+        "league/csv": "^7.0",
+        "mailgun/mailgun-php": "1.8.*",
+        "zircote/swagger-php": "^2.0"
+    }
+}
