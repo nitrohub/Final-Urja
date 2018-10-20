@@ -1,3 +1,8 @@
+<?php
+  session_start(); 
+ if(isset($_SESSION['s_id']))
+ {
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -199,4 +204,9 @@ India
 
 </body>
 </html>
-
+<?php
+  }else
+  {
+    header('Location:../login.php');
+  }
+?>

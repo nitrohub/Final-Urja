@@ -1,6 +1,6 @@
 <?php
   session_start(); 
- if(isset($_SESSION['s_id']))
+ if(isset($_SESSION['alname']))
  {
  ?>
 <!DOCTYPE html>
@@ -34,7 +34,7 @@
 </div>
 <br>
 <ul>
-  <li><a href="../Logout.php">Logout</a></li>
+  <li><a href="../admin/adlogout.php">Logout</a></li>
   <li><a href="#">Contact</a></li>
   <li><a href="../Event/Lsponsors.php">Sponsors</a></li>
   <li><a href="../Event/LoggedEvent.php">Events</a></li>
@@ -79,6 +79,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 <?php
   }else
   {
-    header('Location:../login.php');
+    header('Location:../admin/adlogin.php');
   }
 ?>
+

@@ -1,3 +1,8 @@
+<?php
+  session_start(); 
+ if(isset($_SESSION['s_id']))
+ {
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -36,7 +41,7 @@
 <ul>
   <li><a href="../Logout.php">logout</a></li>
 
-  <li><a href="../Extra/contact.html">Contact</a></li>
+  <li><a href="../Extra/Lcontact.php">Contact</a></li>
   <li><a href="../Event/Lsponsors.php">Sponsors</a></li>
   <li><a href="../Event/LoggedEvent.php">Events</a></li>
   <li><a href="LoggedinHome.php">Home</a></li>
@@ -51,7 +56,7 @@
   <img src="" class="img-responsive img-circle margin" style="display:inline" alt="Studentphoto" width="350" height="350">
  <h2 align="center">
 <?php
-session_start();
+// session_start();
 if(isset($_SESSION['name'])){//for register ka message
   echo 'Welcome '.$_SESSION['name'].'!';
 }elseif (isset($_SESSION['user_name'])) { //for login ka message
@@ -86,7 +91,7 @@ echo $s_id.'';
 $s_id=$_SESSION['id'];
 echo $s_id.'';
 }
-$query="SELECT * FROM registration WHERE S_id='$s_id' ";
+$query="SELECT * FROM registration WHERE S_id='$s_id'";
 $result=mysqli_query($con,$query);
 if($con->error){
   die($con->error);
@@ -124,3 +129,9 @@ India
 </footer>
 </body>
 </html>
+<?php
+  }else
+  {
+    header('Location:../login.php');
+  }
+?>

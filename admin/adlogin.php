@@ -1,11 +1,10 @@
-<!-- <?php
- // session_start();
- // if(isset($_SESSION['user_name']))
- // {
- //  header("location:student/Home page.php");
- // }
-?> -->
-
+<?php
+ session_start();
+ if(isset($_SESSION['alname']))
+ {
+  header("location:AdminDash.php");
+ }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,45 +22,69 @@
 <?php
 if(isset($_POST['submit']))
 {
+    // die("Entered");
 		$user = $_POST['id'];
 		$pwd = $_POST['psw'];
-		$query = "SELECT * FROM admini where Aid ='$user' && A_password ='$pwd'";
-    $result= mysqli_query($con, $query);
-    
+    // echo 'username='.$user.'';
+    // echo 'password='.$pwd.'';
 
-    $query1 = "SELECT adname FROM admini where Aid ='$user'";	
+		$query = "SELECT * FROM admini where A_username ='$user' and A_password ='$pwd'";
+    $result= mysqli_query($con, $query);
+    if($con->error)
+    {
+      die($con->error);
+    }
+    
+    $total = mysqli_num_rows($result);
+
+    // echo 'Total='.$total.'';
+    // die("Total stop");
+    if($con->error)
+    {
+      die($con->error);
+    }
+    if($total == true)
+    {
+      //echo '<p id="wh"> Login Successful</p>';
+        // die('Login Successful');
+       $query1 = "SELECT * FROM admini where A_username ='$user'"; 
     $lol = mysqli_query($con, $query1);
+    if($con->error)
+    {
+      die($con->error);
+    }
     if($row = mysqli_fetch_assoc($lol)){
-      $nam = $row['adname'];
+      // echo 'Got the name='.$row['AdName'].'';
+      // die("\nGot it");
+      $nam = $row['AdName'];
+    }
+    $_SESSION['alname'] = $nam;
+    header('location:AdminDash.php');
+    }
+    else
+    {
+      echo '<script> alert("Incorrect Username or password"); </script>';
     }
 
+   
+
     // echo $lol;
-		$total = mysqli_num_rows($result);
-		if($total == true)
-		{
-			//echo '<p id="wh"> Login Successful</p>';
-		$_SESSION['alname'] = $nam;
-    header('location: AdminDash.php');
-		}
-		else
-		{
-			echo '<script> alert("Incorrect Username or password"); </script>';
-		}
+		
 }
 ?>
 <div align="center">
-<form action=" " method="POST">
+<form action="adlogin.php" method="POST">
   <div  class="container">
     <h1>Admin Login</h1>
     <!-- <p>Please fill in this form to create an account.</p> -->
     <hr>
 
-    <label for="email"><b>Admin Id</b></label>
+    <label for="email"><b>Admin Email</b></label>
     <input id="email" type="text" placeholder="Enter Id" name="id" required>
     <label for="psw"><b>Password</b></label>
     <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
     <hr>
-    <input type="submit" class="registerbtn" name="submit" value="Sign in"/>
+    <input type="submit" class="registerbtn" name="submit" value="Sign in">
   </div>
 
   

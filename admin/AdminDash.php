@@ -1,3 +1,8 @@
+<?php
+  session_start(); 
+ if(isset($_SESSION['alname']))
+ {
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -28,11 +33,10 @@
 <B><h2 ALIGN="center" ><font color=yellow>Urja</h2></B>
 <br>
 <ul>
-  <li><a href="../Logout.php">logout</a></li>
-
-  <li><a href="../Extra/contact.html">Contact</a></li>
-  <li><a href="../Extra/Sponsors.html">Sponsors</a></li>
-  <li><a href="../Event/LoggedEvent.php">Events</a></li>
+  <li><a href="adlogout.php">logout</a></li>
+  <li><a href="../Extra/acontact.php">Contact</a></li>
+  <li><a href="../Extra/asponsor.php">Sponsors</a></li>
+  <!-- <li><a href="../Event/LoggedEvent.php">Events</a></li> -->
   <li><a href="#">Home</a></li>
 
 </ul>
@@ -44,10 +48,11 @@
   <h1 align="center">
   	<?php 
     include('../db/udb.php');
-     ?><?php
-session_start();
-if(isset($_SESSION['aname'])){//for register ka message
-  echo 'Welcome '.$_SESSION['aname'].'!';
+     ?>
+     <?php
+// session_start();
+if(isset($_SESSION['alname'])){//for register ka message
+  echo 'Welcome '.$_SESSION['alname'].'!';
 }elseif (isset($_SESSION['auser_name'])) { //for login ka message
   echo 'Welcome '.$_SESSION['auser_name'].'!';
   # code...
@@ -64,7 +69,7 @@ if(isset($_SESSION['aname'])){//for register ka message
 <!-- Second Container -->
 <div class="container-fluid bg-3 text-center" >  
   
-  <h3 class="margin">Registration details of Student</h3>
+  <h3 class="margin">Event Registration details of Students</h3>
   <?php 
     include('../db/udb.php');
   ?>
@@ -75,12 +80,12 @@ if(isset($_SESSION['aname'])){//for register ka message
       <th>Student Name</th>
       <th align="center">Event Id</th>
       <th>Event name</th>
-      <th>Update</th>
+      <!-- <th>Update</th> -->
       <th>Delete</th>
       </tr>
   </thead>
     <?php
-include('../db/udb.php');
+// include('../db/udb.php');
 
 // echo $s_id.'';
 $query="SELECT * FROM registration";
@@ -106,19 +111,71 @@ while($row=mysqli_fetch_array($result))
   echo "<td>".$rw['S_name']."</td>";
   echo "<td>".$row['E_id']."</td>";
   echo "<td>".$row['Ename']."</td>";
-  echo("<td><a class='btn btn-info' href='Edit.php?sid=".$s_id."'>Edit</a></td>");
-  echo("<td><a class='btn btn-danger' href='../student/unregister.php?E_id=".$E_id."'>UnRegister</a></td></tr>");
+  // echo("<td><a class='btn btn-info' href='Edit.php?sid=".$s_id."'>Edit</a></td>");
+  echo("<td><a class='btn btn-danger' href='../admin/aUnregister.php?E_id=".$E_id."'>UnRegister</a></td></tr>");
  
-  if(isset($_POST['unregister']))
-  {
-    $_SESSION['unregister']=$row['E_id'];
-    ('Location:unregister.php');
-  }
+  // if(isset($_POST['unregister']))
+  // {
+  //   $_SESSION['unregister']=$row['E_id'];
+  //   ('Location:unregister.php');
+  // }
 }
 ?>
 
 </table>
-<a href="../Register.php" class="btn btn-success btn-lg">Add Student?</a>
+<!-- <a href="aRegister.php" class="btn btn-success btn-lg">Add Student?</a> -->
+</div>
+
+<h3 class="margin" align="center">Student Registration details</h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Student Name</th>
+      <th>Student Id</th>
+      <!-- <th align="center">Event Id</th> -->
+      <!-- <th>Event name</th> -->
+      <th>Update</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <?php
+  $query1="SELECT * FROM student";
+  $result1=mysqli_query($con,$query1);
+
+while($row1=mysqli_fetch_array($result1))
+{
+  $sname = $row1['S_name'];
+  $s_id1=$row1['S_id'];
+  // $qr="SELECT * FROM student WHERE S_id='$s_id' ";
+  // $rt=mysqli_query($con,$qr);
+  // if($con->error)
+  // {
+  //   die($con->error);
+  // }
+  // $rw=mysqli_fetch_array($rt);
+  // if($con->error)
+  // {
+  //   die($con->error);
+  // }
+  echo "<tr>";
+  echo "<td>".$sname."</td>";
+  echo "<td>".$s_id1."</td>";
+  // echo "<td>".$row['E_id']."</td>";
+  // echo "<td>".$row['Ename']."</td>";
+  echo("<td><a class='btn btn-info' href='Edit.php?sid=".$s_id1."'>Edit</a></td>");
+  echo("<td><a class='btn btn-danger' href='aUnregister.php?sid=".$s_id1."'>UnRegister</a></td></tr>");
+ 
+  // if(isset($_POST['unregister']))
+  // {
+  //   $_SESSION['unregister']=$row['E_id'];
+  //   ('Location:unregister.php');
+  // }
+}
+?>
+
+</table>
+<a href="aRegister.php" class="btn btn-success btn-lg">Add Student?</a>
 </div>
 
 
@@ -179,3 +236,9 @@ India
 </footer>
 </body>
 </html>
+<?php
+  }else
+  {
+    header('Location:adlogin.php');
+  }
+?>

@@ -1,3 +1,4 @@
+<!-- Coming from edit.php -->
 <?php
 include("../db/udb.php");
 
@@ -18,6 +19,9 @@ if($run==true)
   ?>
   <script>
     alert('Data Updated Successfully!');
-    windows.open('Edit.php?sid=<?php echo $id;?>','_self');
+    // windows.open('Edit.php?sid=<?php  $id;?>','AdminDash.php');
   </script>
-<?php } ?>
+
+<?php
+	header('Location:AdminDash.php');
+ } ?>

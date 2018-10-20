@@ -1,6 +1,6 @@
 <?php
   session_start(); 
- if(isset($_SESSION['s_id']))
+ if(isset($_SESSION['alname']))
  {
  ?>
 <!DOCTYPE html>
@@ -34,12 +34,11 @@
 </div>
 <br>
 <ul>
-  <li><a href="../Logout.php">Logout</a></li>
-  <li><a href="../Extra/Lcontact.php">Contact</a></li>
+  <li><a href="../admin/adlogout.php">Logout</a></li>
+  <li><a href="../Extra/contact.html">Contact</a></li>
   <li><a href="#">Sponsors</a></li>
-  <li><a href="../Event/LoggedEvent.php">Events</a></li>
-  <li><a href="../student/LoggedinHOME.php">Home</a></li>
-
+  <!-- <li><a href="../Event/Event.php">Events</a></li> -->
+  <li><a href="../admin/AdminDash.php">Dashboard</a></li>
 </ul>
 <br>
 
@@ -192,6 +191,6 @@
 <?php
   }else
   {
-    header('Location:../login.php');
+    header('Location:../admin/adlogin.php');
   }
 ?>
