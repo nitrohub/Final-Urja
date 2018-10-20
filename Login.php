@@ -48,11 +48,11 @@ if(isset($_POST['submit']))
 			//echo '<p id="wh"> Login Successful</p>';
 		$_SESSION['user_name'] = $nam;
     $_SESSION['s_id']=$id;
-    header('location: student/Dashboard1.php');
+    header('location: student/LoggedinHome.php');
 		}
 		else
 		{
-			echo 'Incorrect Username or password';
+			echo '<script> alert("Incorrect Username or password"); </script>';
 
 		}
 }

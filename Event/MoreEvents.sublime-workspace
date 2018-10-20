@@ -1,0 +1,465 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"pubg"
+			],
+			[
+				"game",
+				"gamezone"
+			],
+			[
+				"code",
+				"codecell"
+			],
+			[
+				"pro",
+				"prompt"
+			],
+			[
+				"st",
+				"student"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"s",
+				"s_id"
+			],
+			[
+				"ali",
+				"align-self\tproperty"
+			],
+			[
+				"text-",
+				"text-shadow\tproperty"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"c",
+				"col-lg-4"
+			],
+			[
+				"col",
+				"col-md-6"
+			],
+			[
+				"thum",
+				"thumbnail"
+			],
+			[
+				"tu",
+				"thumbnails"
+			],
+			[
+				"thumbnail",
+				"thumbnails"
+			],
+			[
+				"thu",
+				"thumbnails"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"co",
+				"col-sm-6"
+			],
+			[
+				"session_",
+				"session_destroy"
+			],
+			[
+				"S",
+				"S_id"
+			],
+			[
+				"nav",
+				"Navbar"
+			],
+			[
+				"Nav",
+				"navbar"
+			],
+			[
+				"for",
+				"form\tTag"
+			],
+			[
+				"Re",
+				"Registerinput"
+			],
+			[
+				"_",
+				"_SESSION"
+			],
+			[
+				"E",
+				"Ename"
+			],
+			[
+				"session",
+				"session_destroy"
+			],
+			[
+				"btn-",
+				"btn-success"
+			],
+			[
+				"btn",
+				"btn-info"
+			],
+			[
+				"user",
+				"Username"
+			],
+			[
+				"username",
+				"user_name"
+			],
+			[
+				"L",
+				"Location"
+			],
+			[
+				"sessio",
+				"session_start"
+			],
+			[
+				"text",
+				"text-transform\tproperty"
+			],
+			[
+				"borde",
+				"border-bottom\tproperty"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"u",
+				"uppercase\ttext-transform"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"background",
+				"background-repeat\tproperty"
+			],
+			[
+				"p_",
+				"p_age"
+			],
+			[
+				"mysql_",
+				"mysql_connect"
+			],
+			[
+				"border",
+				"border-style\tproperty"
+			],
+			[
+				"border-",
+				"border-width\tproperty"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"t",
+				"type\tAttr"
+			],
+			[
+				"re",
+				"required\tAttr"
+			],
+			[
+				"in",
+				"input\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/new_urja-master/Event/LoggedEvent.php",
+		"/C/xampp/htdocs/new_urja-master/Event/Event.php",
+		"/C/xampp/htdocs/new_urja-master/Login.php",
+		"/C/xampp/htdocs/new_urja-master/Event/MoreEvents.php",
+		"/C/xampp/htdocs/new_urja-master/Register.php",
+		"/C/xampp/htdocs/new_urja-master/student/LoggedinHome.php",
+		"/C/xampp/htdocs/urja/Event/Event.php",
+		"/C/Users/HP/Downloads/Desktop/course/JavaScript exercise solution/AgeCalculator.htm",
+		"/C/Users/HP/Downloads/Desktop/course/JavaScript exercise solution/basic.js",
+		"/C/Users/HP/Downloads/Desktop/course/New folder/basic.htm",
+		"/C/Users/HP/Downloads/Desktop/course/New folder/Stalker.js",
+		"/C/xampp/htdocs/new_urja-master/student/Dashboard1.php",
+		"/C/xampp/htdocs/new_urja-master/Event/Experimental.php",
+		"/C/xampp/htdocs/new_urja-master/Event/LMoreEvents.php",
+		"/C/xampp/htdocs/new_urja-master/Event/Registerinput.php",
+		"/C/xampp/htdocs/new_urja-master/test.php",
+		"/C/xampp/htdocs/new_urja-master/admin/AdminDash.php",
+		"/C/xampp/htdocs/new_urja-master/css/EVENT.css",
+		"/C/Users/HP/Downloads/Register.php",
+		"/C/xampp/htdocs/urja/db/udb.php",
+		"/C/xampp/htdocs/urja/admin/AdminDash.php",
+		"/C/xampp/htdocs/urja/admin/Edit.php",
+		"/C/xampp/htdocs/urja/admin/updated.php",
+		"/C/xampp/htdocs/urja/Login.php",
+		"/C/xampp/htdocs/urja/student/Dashboard1.php",
+		"/C/xampp/htdocs/urja/Event/Registerinput.php",
+		"/C/xampp/htdocs/urja/Event/LMoreEvents.php",
+		"/C/xampp/htdocs/urja/student/HOME PAGE.php",
+		"/C/xampp/htdocs/urja/css/HOME PAGE.css",
+		"/C/xampp/htdocs/urja/student/unregister.php",
+		"/C/xampp/htdocs/urja/panel/application/config/production/database.php",
+		"/C/xampp/htdocs/urja/panel/application/config/database.php",
+		"/C/xampp/htdocs/urja/panel/application/config/config.php",
+		"/C/xampp/htdocs/panel/application/config/config.php",
+		"/C/xampp/htdocs/panel/application/config/database.php",
+		"/C/xampp/htdocs/panel/application/config/production/database.php",
+		"/C/Users/HP/Downloads/Desktop/course/bootstrapExercise/app.css",
+		"/C/Users/HP/Downloads/Desktop/course/bootstrapExercise/startup.htm",
+		"/C/Users/HP/Downloads/Desktop/course/bootstrapExercise/grid.htm",
+		"/C/Users/HP/Downloads/Desktop/material-dashboard-dark-edition-v2.1.0/template.html",
+		"/C/Users/HP/Downloads/Desktop/startbootstrap-sb-admin-gh-pages/404.html",
+		"/C/Users/HP/Downloads/Desktop/material-dashboard-dark-edition-v2.1.0/examples/user.html",
+		"/C/Users/HP/Downloads/Desktop/web course examples/bootstrap exercise/bishops.cpp",
+		"/C/Users/HP/Downloads/Desktop/web course examples/bootstrap exercise/CSS/bootstrap.min.css",
+		"/C/Users/HP/Downloads/Desktop/web course examples/bootstrap exercise/grid.htm",
+		"/C/Users/HP/Downloads/Desktop/web course examples/bootstrap exercise/navbar.htm",
+		"/C/Users/HP/Downloads/Desktop/web course examples/bootstrap exercise/BootExer.html",
+		"/C/xampp/htdocs/urja/Event/Success.php",
+		"/C/Program Files/Git/ReleaseNotes.html",
+		"/C/Users/HP/Downloads/Desktop/New Tab.html",
+		"/C/Users/HP/Downloads/Desktop/New Tab_files/saved_resource.html",
+		"/C/xampp/htdocs/urja/student/DummyDash.php",
+		"/C/Users/HP/Downloads/Desktop/..htm",
+		"/C/Users/HP/Downloads/Desktop/ni.php",
+		"/C/xampp/htdocs/urja/student/Dashboard1.php.htm",
+		"/C/xampp/htdocs/urja/Event/Event.html",
+		"/C/xampp/htdocs/urja/student/urja.php",
+		"/C/xampp/htdocs/urja/Register.php",
+		"/C/xampp/htdocs/urja/urja/Event/Experimental.php",
+		"/C/xampp/htdocs/urja/urja/db/udb.php",
+		"/C/xampp/htdocs/urja/urja/dynamic_insert.php",
+		"/C/xampp/htdocs/urja/urja/experimentHome.php",
+		"/C/xampp/htdocs/urja/db/db.php",
+		"/C/xampp/htdocs/urja/urja/search.php",
+		"/C/xampp/htdocs/urja/urja/Event/MoreEvents.php",
+		"/C/xampp/htdocs/urja/urja/Event/Event.html",
+		"/C/xampp/htdocs/urja/style.css",
+		"/C/xampp/htdocs/urja/index.php",
+		"/C/xampp/htdocs/urja/urja/Login.php",
+		"/C/xampp/htdocs/urja/urja/Dashboard1.php",
+		"/C/xampp/htdocs/urja/urja/Register.php",
+		"/C/xampp/htdocs/urja/urja/HOME PAGE.html",
+		"/C/xampp/htdocs/urja/urja/static_insert.php",
+		"/C/xampp/htdocs/urja/urja/expgo.php",
+		"/C/xampp/htdocs/urja/urja/regist.css",
+		"/C/xampp/htdocs/urja/urja/Redirecting page.php",
+		"/C/xampp/htdocs/urja/urja/LoginSuccessful.php",
+		"/C/Users/HP/Downloads/Desktop/ex.htm",
+		"/C/xampp/htdocs/urja/urja/Event/Event.php",
+		"/C/xampp/htdocs/urja/urja/Event.php",
+		"/C/xampp/htdocs/urja/urja/urja.php",
+		"/C/xampp/htdocs/urja/urja/jquer.php",
+		"/C/xampp/htdocs/urja/urja/json.php",
+		"/C/xampp/htdocs/urja/urja/pracsLogin.php",
+		"/C/Users/HP/Downloads/Desktop/web course examples/photoshop/photoshop.htm",
+		"/C/Users/HP/Downloads/Desktop/web course examples/Blog/blog.htm",
+		"/C/Users/HP/Downloads/Desktop/web course examples/Blog/blog.css",
+		"/C/Users/HP/Downloads/Desktop/web course examples/photoshop/photo.css",
+		"/C/Users/HP/Downloads/Desktop/web course examples/tic tac toe diagram/tic tac toe.css",
+		"/C/Users/HP/Downloads/Desktop/web course examples/ex.htm",
+		"/C/Users/HP/Downloads/Desktop/web course examples/tic tac toe diagram/tic tac toe.htm",
+		"/C/Users/HP/Downloads/Desktop/nitac.htm",
+		"/C/Users/HP/Downloads/Desktop/web course examples/san.css",
+		"/C/Users/HP/Downloads/Desktop/st.css",
+		"/C/Users/HP/Downloads/Desktop/tut.htm",
+		"/C/Users/HP/Downloads/Desktop/style.css",
+		"/C/Users/HP/Downloads/Desktop/09_Selector_Exercise_Starter/selectorsExercise.html",
+		"/C/Users/HP/Downloads/Desktop/09_Selector_Exercise_Starter/selectors.css",
+		"/C/Users/HP/Downloads/Desktop/Solution/solution.css",
+		"/C/xampp/htdocs/tuts/urja/Login.php",
+		"/C/xampp/htdocs/tuts/urja/regist.css",
+		"/C/xampp/htdocs/tuts/index.php",
+		"/C/xampp/htdocs/tuts/urja/HOME PAGE.html",
+		"/C/xampp/htdocs/tuts/New folder/db.php",
+		"/C/xampp/htdocs/tuts/style.css"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.8
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Chrome.sublime-build",
+	"project": "MoreEvents.sublime-project",
+	"replace":
+	{
+		"height": 52.8
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 364.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

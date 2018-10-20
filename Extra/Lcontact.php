@@ -29,11 +29,11 @@
 </div>
 <br>
 <ul>
-  <li><a href="../Register.php">Sign up</a></li>
-  <li><a href="../Extra/contact.html">Contact</a></li>
-  <li><a href="../Extra/Sponsors.html">Sponcers</a></li>
-  <li><a href="../Event/Event.php">Events</a></li>
-  <li><a href="../student/HOME PAGE.php">Home</a></li>
+  <li><a href="../Logout.php">Logout</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="../Event/Lsponsors.php">Sponsors</a></li>
+  <li><a href="../Event/LoggedEvent.php">Events</a></li>
+  <li><a href="../student/LoggedinHome.php">Home</a></li>
 
 </ul>
 

@@ -1,3 +1,11 @@
+<?php
+ session_start();
+ if(isset($_SESSION['user_name']))
+ {
+  header("location:LMoreEvents.php");
+ }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -16,11 +24,17 @@
 <title>HOMEPAGE</title>
 </head>
 <body class="bod">
-<div>
+<!-- <div>
 <img src="../images/kjsce logo.png" alt="college image" height="100" width ="100" ALIGN="left" >
+</div> -->
+<!-- <B><h1 ALIGN="center">KJSCE</B></h1> -->
+<!-- <B><h2 ALIGN="center" ><font color=yellow>Urja</h2></B> -->
+
+
+<div class="container-fluid bg-1 text-center">
+  <img src="../images/col.jpg" class="img-responsive img-circle margin" style="display:inline" alt="festphoto" width="350" height="350">
+  <h1>Urja</h1>
 </div>
-<B><h1 ALIGN="center">KJSCE</B></h1>
-<B><h2 ALIGN="center" ><font color=yellow>Urja</h2></B>
 <br>
 <ul>
   <li><a href="../Register.php">Sign up</a></li>
@@ -39,7 +53,7 @@
 <!-- Second Container -->
 <div class="container-fluid bg-3 text-center">    
   <h3 class="margin" id="C4">Technial</h3><br>
-  <div class="row">
+  <div class="row" id="Nemo">
     <div class="col-sm-4">
       <img src="../images/eesa-fawofaw.png" class="img-responsive margin" style="width:100%" alt="Image">
       
@@ -56,20 +70,20 @@
       
     </div>
   </div>
-    <div class="row">
+    <div class="row" id="Car">
     <div class="col-sm-4">
       <img src="../images/mesa-carobar.png" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-8"> 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      <form  action="../Experimental.php">
+      <form  action="Experimental.php">
         <input type="submit" name="submit" value="Register">
       </form>
     </p>
       
     </div>
   </div>
-    <div class="row">
+    <div class="row" id="ctrl">
     <div class="col-sm-4">
       <img src="../images/iste-cse.png" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
@@ -87,7 +101,7 @@
 
 <!-- Third Container (Grid) --><div class="container-fluid bg-3 text-center">    
   <h3 class="margin" id="C5">Coding</h3><br>
-  <div class="row">
+  <div class="row"   id="codecell">
     <div class="col-sm-4">
       <img src="../images/cding.png" class="img-responsive margin" style="width:100%" alt="Image">
       
@@ -101,7 +115,7 @@
       
     </div>
   </div>
-    <div class="row">
+    <div class="row" id="lcode">
     <div class="col-sm-4">
       <img src="../images/code.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
@@ -114,7 +128,7 @@
       
     </div>
   </div>
-    <div class="row">
+    <div class="row"   id="game">
     <div class="col-sm-4">
       <img src="../images/codecell.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
@@ -134,7 +148,7 @@
 
 <div class="container-fluid bg-3 text-center">    
   <h3 class="margin" id="C6">Gaming</h3><br>
-  <div class="row">
+  <div class="row"   id="gamezone">
     <div class="col-sm-4">
       <img src="../images/pubg.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
@@ -150,7 +164,7 @@
       
     </div>
   </div>
-    <div class="row">
+    <div class="row" id="Cs">
     <div class="col-sm-4">
       <img src="../images/cs.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
@@ -163,7 +177,7 @@
       
     </div>
   </div>
-    <div class="row">
+    <div class="row"  id="pubg" >
     <div class="col-sm-4">
       <img src="../images/g1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
@@ -194,3 +208,5 @@ India
 
 </body>
 </html>
+
+

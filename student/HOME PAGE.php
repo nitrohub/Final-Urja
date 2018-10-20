@@ -1,5 +1,9 @@
-<?php 
-session_start();
+<?php
+ session_start();
+ if(isset($_SESSION['user_name']))
+ {
+  header("location:LoggedinHome.php");
+ }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,15 +19,22 @@ session_start();
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../css/HOME PAGE.css">
+<link rel="stylesheet" type="text/css" href=""../css/ht.css">
 
 <title>HOMEPAGE</title>
 </head>
 <body class="bod">
-<div>
+<!-- <div>
 <img src="../images/kjsce logo.png" alt="college image" height="100" width ="100" ALIGN="left" >
 </div>
-<B><h1 ALIGN="center">KJSCE</B></h1>
-<B><h2 ALIGN="center" ><font color=yellow>Urja</h2></B>
+<B><h1 ALIGN="center">KJSCE</B></h1> -->
+<!-- <B><h2 ALIGN="center" ><font color=yellow>Urja</h2></B> -->
+<!-- <br> -->
+
+<div class="container-fluid bg-1 text-center">
+  <img src="../images/col.jpg" class="img-responsive img-circle margin" style="display:inline" alt="festphoto" width="350" height="350">
+  <h1>Urja</h1>
+</div>
 <br>
 <ul>
 	<li><a href="../Register.php">Sign up</a></li>
@@ -34,6 +45,8 @@ session_start();
 
 </ul>
 <br>
+
+
 
 <div class="container-fluid bg-1 text-center" >
 <section class="banner-area relative" id="home">

@@ -12,9 +12,9 @@ if(isset($_POST["Car"]))
     }elseif (isset($_SESSION['id']))
      {
        $S_id=$_SESSION['id'];
-                  }
+     }
     // echo "Session id=".$S_id.'';
-	$uery = "SELECT * FROM registration where E_id ='$E_id'"; //For checking if the event is already registered
+	$uery = "SELECT * FROM registration where E_id=$E_id and S_id='$S_id'"; //For checking if the event is already registered
     $esult= mysqli_query($con, $uery);
     if($con->error){
     	die("$con->error");
@@ -31,12 +31,13 @@ if(isset($_POST["Car"]))
     $result=mysqli_query($con, $query);
     if($con->error){
     	die("Already Registered!!");
-     }
-   }
-    $Pid=1;
+        }
+     $Pid=1;
     $query1="INSERT INTO payment(Pay_id,S_id) VALUES ('$Pid','S_id')";
     $result1=mysqli_query($con,$query1);
-    header('Location:Payment.php');		
+    header('Location:Payment.php');     
+        }
+    
 }
  if (isset($_POST["Find"]))
 {
@@ -45,7 +46,7 @@ if(isset($_POST["Car"]))
 	$E_id=2;
 	$S_id=$_SESSION['s_id'];
 	echo $S_id.'';
-	$uery = "SELECT * FROM registration where E_id ='$E_id'"; //For checking if the event is already registered
+	$uery = "SELECT * FROM registration where E_id ='$E_id' and S_id='$S_id'"; //For checking if the event is already registered
     $esult= mysqli_query($con, $uery);
     if($con->error){
     	die("$con->error");
@@ -60,23 +61,21 @@ if(isset($_POST["Car"]))
     if($con->error){
     	die("$con->error");
     }
-   
-		}
-	
-    $query1="INSERT INTO payment(S_id) VALUES ('$S_id')";
+        $query1="INSERT INTO payment(S_id) VALUES ('$S_id')";
 
     $result1=mysqli_query($con,$query1);
     if($con->error){
-    	die("$con->error");
+        die("$con->error");
     }
-    header('Location:Payment.php');		
+    header('Location:Payment.php');
+		}		
 }
 if(isset($_POST['Ctrl']))
 {
 	$Ename="Ctrl+shift+del";
 	$E_id=3;
 	$S_id=$_SESSION['s_id'];
-	$uery = "SELECT * FROM registration where E_id ='$E_id'"; //For checking if the event is already registered
+	$uery = "SELECT * FROM registration where E_id ='$E_id' and S_id='$S_id'"; //For checking if the event is already registered
     $esult= mysqli_query($con, $uery);
     if($con->error){
     	die("$con->error");
@@ -91,21 +90,23 @@ if(isset($_POST['Ctrl']))
     if($con->error){
     	die("$con->error");
     }
-		}
-	
-    $query1="INSERT INTO payment (S_id) VALUES ('$S_id')";
+		$query1="INSERT INTO payment (S_id) VALUES ('$S_id')";
     $result1=mysqli_query($con,$query1);
     if($con->error){
-    	die("$con->error");
+        die("$con->error");
     }
-     header('Location:Payment.php');		
+     header('Location:Payment.php');
+
+        }
+	
+    		
 }
 if(isset($_POST['kjsce']))
 {
 	$Ename="kjsce coding challenge";
 	$E_id=4;
 	$S_id=$_SESSION['s_id'];
-	$uery = "SELECT * FROM registration where E_id ='$E_id'"; //For checking if the event is already registered
+	$uery = "SELECT * FROM registration where E_id ='$E_id' and S_id='$S_id'"; //For checking if the event is already registered
     $esult= mysqli_query($con, $uery);
     if($con->error){
     	die("$con->error");
@@ -120,21 +121,23 @@ if(isset($_POST['kjsce']))
     if($con->error){
     	die("$con->error");
     }
-		}
-	
-    $query1="INSERT INTO payment(S_id) VALUES ('$S_id')";
+		 $query1="INSERT INTO payment(S_id) VALUES ('$S_id')";
     $result1=mysqli_query($con,$query1);
     if($con->error){
-    	die("$con->error");
+        die("$con->error");
     }
-     header('Location:Payment.php');		
+     header('Location:Payment.php');    
+
+        }
+	
+   	
 }
 if(isset($_POST['Learn']))
 {
 	$Ename="Learn code";
 	$E_id=5;
 	$S_id=$_SESSION['s_id'];
-	$uery = "SELECT * FROM registration where E_id ='$E_id'"; //For checking if the event is already registered
+	$uery = "SELECT * FROM registration where E_id ='$E_id' and S_id='$S_id'"; //For checking if the event is already registered
     $esult= mysqli_query($con, $uery);
     if($con->error){
     	die("$con->error");
@@ -163,7 +166,7 @@ if(isset($_POST['GameDev']))
 	$Ename="GameDev";
 	$E_id=6;
 	$S_id=$_SESSION['s_id'];
-	$uery = "SELECT * FROM registration where E_id ='$E_id'"; //For checking if the event is already registered
+	$uery = "SELECT * FROM registration where E_id ='$E_id' and S_id='$S_id'"; //For checking if the event is already registered
     $esult= mysqli_query($con, $uery);
     if($con->error){
     	die("$con->error");
@@ -178,21 +181,22 @@ $query ="INSERT INTO registration (E_id,Ename,S_id) VALUES ($E_id, '$Ename','$S_
     if($con->error){
     	die("$con->error");
     }
-			 }
-	
-    $query1="INSERT INTO payment(S_id) VALUES ('$S_id')";
+			 
+        $query1="INSERT INTO payment(S_id) VALUES ('$S_id')";
     $result1=mysqli_query($con,$query1);
     if($con->error){
-    	die("$con->error");
+        die("$con->error");
     }
-     header('Location:Payment.php');		
+     header('Location:Payment.php');
+             }
+			
 }
 if(isset($_POST['gamezone']))
 {
 	$Ename="gamezone";
 	$E_id=7;
 	$S_id=$_SESSION['s_id'];
-	$uery = "SELECT * FROM registration where E_id ='$E_id'"; //For checking if the event is already registered
+	$uery = "SELECT * FROM registration where E_id ='$E_id' and S_id='$S_id'"; //For checking if the event is already registered
     $esult= mysqli_query($con, $uery);
     if($con->error){
     	die("$con->error");
@@ -207,21 +211,23 @@ $query ="INSERT INTO registration (E_id,Ename,S_id) VALUES ('$E_id', '$Ename','$
     if($con->error){
     	die("$con->error");
     }
-			 }
-	
-    $query1="INSERT INTO payment(S_id) VALUES ('$S_id')";
+			 
+     $query1="INSERT INTO payment(S_id) VALUES ('$S_id')";
     $result1=mysqli_query($con,$query1);
     if($con->error){
-    	die("$con->error");
+        die("$con->error");
     }
-     header('Location:Payment.php');		
+     header('Location:Payment.php');
+             }
+	
+   		
 }
 if(isset($_POST['CsGo']))
 {
 	$Ename="CsGo";
 	$E_id=8;
 	$S_id=$_SESSION['s_id'];
-	$uery = "SELECT * FROM registration where E_id ='$E_id'"; //For checking if the event is already registered
+	$uery = "SELECT * FROM registration where E_id ='$E_id' and S_id='$S_id'"; //For checking if the event is already registered
     $esult= mysqli_query($con, $uery);
     if($con->error){
     	die("$con->error");
@@ -236,21 +242,23 @@ $query ="INSERT INTO registration (E_id,Ename,S_id) VALUES ('$E_id', '$Ename','$
     if($con->error){
     	die("$con->error");
     }
-			 }
-	
-    $query1="INSERT INTO payment(S_id) VALUES ('$S_id')";
+			 
+        $query1="INSERT INTO payment(S_id) VALUES ('$S_id')";
     $result1=mysqli_query($con,$query1);
     if($con->error){
-    	die("$con->error");
+        die("$con->error");
     }
-     header('Location:Payment.php');		
+     header('Location:Payment.php');
+             }
+	
+    		
 }
 if(isset($_POST['Pubg']))
 {
 	$Ename="Pubg";
 	$E_id=9;
 	$S_id=$_SESSION['s_id'];
-	$uery = "SELECT * FROM registration where E_id ='$E_id'"; //For checking if the event is already registered
+	$uery = "SELECT * FROM registration where E_id ='$E_id' and S_id='$S_id'"; //For checking if the event is already registered
     $esult= mysqli_query($con, $uery);
     if($con->error){
     	die("$con->error");
@@ -265,16 +273,18 @@ if(isset($_POST['Pubg']))
     if($con->error){
     	die("$con->error");
     				}
-			 }
-	
-    $query1="INSERT INTO payment(S_id) VALUES ('$S_id')";
+			 
+$query1="INSERT INTO payment(S_id) VALUES ('$S_id')";
     $result1=mysqli_query($con,$query1);
     if($con->error){
-    	die("$con->error");
+        die("$con->error");
     }
-     header('Location:Payment.php');		
+     header('Location:Payment.php');
+             }
+	
+    		
 }else
 {
-	echo 'Not Successfull!';
+	die("Not Successfull!");
 }
 ?>

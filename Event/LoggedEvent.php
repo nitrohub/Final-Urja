@@ -16,37 +16,46 @@
 <title>HOMEPAGE</title>
 </head>
 <body class="bod">
-<div>
+<!-- <div>
 <img src="../images/kjsce logo.png" alt="college image" height="100" width ="100" ALIGN="left" >
 </div>
-<B><h1 ALIGN="center">KJSCE</B></h1>
-<B><h2 ALIGN="center" ><font color=yellow>Urja</h2></B>
+<B><h1 ALIGN="center">KJSCE</B></h1> -->
+<!-- <B><h2 ALIGN="center" ><font color=yellow>Urja</h2></B> -->
+<!-- <br> -->
+
+<div class="container-fluid bg-1 text-center">
+  <img src="../images/col.jpg" class="img-responsive img-circle margin" style="display:inline" alt="festphoto" width="350" height="350">
+  <h1>Urja</h1>
+</div>
 <br>
 <ul>
   <li><a href="../Logout.php">logout</a></li>
-  <li><a href="../Extra/contact.html">Contact</a></li>
-  <li><a href="../Extra/Sponsors.html">Sponsors</a></li>
+  <li><a href="../Extra/Lcontact.php">Contact</a></li>
+  <li><a href="Lsponsors.php">Sponsors</a></li>
   <li><a href="../Event/LoggedEvent.php">Events</a></li>
   <li><a href="../student/LoggedinHome.php">Home</a></li>
 
 </ul>
+
+
+
 <br>
   <h2 style="text-align:center;">
-     <a href="../event/LMoreEvents.php"> Technical <br></a>
+     <a href="../event/LMoreEvents.php#C4"> Technical <br></a>
   </h2>
     <div class="container">
        <div class="row">    
          <div class="col-sm-4">
-           <a href="../event/LMoreEvents.php"> <img src="../images/eesa-fawofaw.png" width=300 height=300 style="padding: 5px;"> </a>
-           <h3> <a href="../event/LMoreEvents.php"> Finding Nemo </a></h3>
+           <a href="../event/LMoreEvents.php#Nemo"> <img src="../images/eesa-fawofaw.png" width=300 height=300 style="padding: 5px;"> </a>
+           <h3> <a href="../event/LMoreEvents.php#Nemo"> Finding Nemo </a></h3>
          </div>
          <div class="col-sm-4">
-           <a href="../event/LMoreEvents.php"><img style="padding: 5px;" src="../images/mesa-carobar.png" width="300" height="300"></a>
-           <h3> <a href="../event/LMoreEvents.php"> Car Mela</a> </h3>
+           <a href="../event/LMoreEvents.php#Car"><img style="padding: 5px;" src="../images/mesa-carobar.png" width="300" height="300"></a>
+           <h3> <a href="../event/LMoreEvents.php#Car"> Car Mela</a> </h3>
          </div>
          <div class="col-sm-4">
-           <a href="../event/LMoreEvents.php"><img style="padding: 5px;" src="../images/iste-cse.png" width="300" height="300"> </a>
-           <h3><a href="">Ctrl+shift+del</a></h3>
+           <a href="../event/LMoreEvents.php#ctrl"><img style="padding: 5px;" src="../images/iste-cse.png" width="300" height="300"> </a>
+           <h3><a href="../event/LMoreEvents.php#ctrl">Ctrl+shift+del</a></h3>
          </div>
          </div>
             
@@ -54,40 +63,42 @@
                                                                   
 
   <h2 style="text-align:center;">
-    <a href="../event/LMoreEvents.php">Coding<br></a>
+    <a href="../event/LMoreEvents.php#C5">Coding<br></a>
+   </h2>
     <div class="row">
       <div class="col-sm-4">
-        <a href="../event/LMoreEvents.php"> <img style="padding: 5px;" src="../images/codecell.jpg" width=300 height=300> </a>
-        <h3><a href="../urja/event/LMoreEvents.php">           kjsce coding challenge </a></h3>
+        <a href="../event/LMoreEvents.php#codecell"> <img style="padding: 5px;" src="../images/codecell.jpg" width=300 height=300> </a>
+        <h3><a href="../urja/event/LMoreEvents.php#codecell">           kjsce coding challenge </a></h3>
       </div> 
       <div class="col-sm-4"> 
-        <a href="../event/LMoreEvents.php"><img style="padding: 5px;" src="../images/code.jpg" width="300" height="300"></a>
-        <h3><a href="../event/LMoreEvents.php">Learn code </a></h3>
+        <a href="../event/LMoreEvents.php#lcode"><img style="padding: 5px;" src="../images/code.jpg" width="300" height="300"></a>
+        <h3><a href="../event/LMoreEvents.php#lcode">Learn code </a></h3>
       </div>
       <div class="col-sm-4">  
-        <a href="../event/LMoreEvents.php"><img style="padding: 5px;" src="../images/cding.png" width="300" height="300"></a>
-        <h3> <a href="../event/LMoreEvents.php"> GameDev</a></h3>
+        <a href="../event/LMoreEvents.php#game"><img style="padding: 5px;" src="../images/cding.png" width="300" height="300"></a>
+        <h3> <a href="../event/LMoreEvents.php#game"> GameDev</a></h3>
       </div>
       </div>
-  </h2>
+ 
                                                  
   <h2 style="text-align:center;">
-    <a href="http://localhost/urja/event/LMoreEvents.php">Gaming</a>
+    <a href="http://localhost/urja/event/LMoreEvents.php#C6">Gaming</a>
+   </h2>
         <br>
         <div class="row">
         <div class ="col-sm-4">
-        <a href="../event/LMoreEvents.php"><img style="padding: 5px;" src="../images/g1.jpg" width=300 height=300></a>
-        <h3><a href="../event/LMoreEvents.php">gamezone</a></h3>
+        <a href="../event/LMoreEvents.php#gamezone"><img style="padding: 5px;" src="../images/g1.jpg" width=300 height=300></a>
+        <h3><a href="../event/LMoreEvents.php#gamezone">gamezone</a></h3>
         </div>
         <div class ="col-sm-4">
-        <a href="../event/LMoreEvents.php"><img style="padding: 5px;" src="../images/cs.jpg" width="300" height="300"></a>
-        <h3><a href="../event/LMoreEvents.php">CsGo</a></h3>
+        <a href="../event/LMoreEvents.php#Cs"><img style="padding: 5px;" src="../images/cs.jpg" width="300" height="300"></a>
+        <h3><a href="../event/LMoreEvents.php#Cs">CsGo</a></h3>
         </div>
         <div class ="col-sm-4">
-        <a href="../event/LMoreEvents.php"><img style="padding: 5px;" src="../images/pubg.jpg" width="300" height="300"></a>
-        <h3><a href="../event/LMoreEvents.php">Pubg</a></h3>
+        <a href="../event/LMoreEvents.php#pubg"><img style="padding: 5px;" src="../images/pubg.jpg" width="300" height="300"></a>
+        <h3><a href="../event/LMoreEvents.php#pubg">Pubg</a></h3>
         </div>
-  </h2>
+ 
                                                                                  
 <footer>
   <h3 style="text-align:center;">

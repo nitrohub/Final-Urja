@@ -21,22 +21,29 @@
   }
 </style>
 <body class="bod">
-<div>
+<!-- <div>
 <img src="../images/kjsce logo.png" alt="college image" height="100" width ="100" ALIGN="left" >
 </div>
-<B><h1 ALIGN="center">KJSCE</B></h1>
-<B><h2 ALIGN="center" ><font color=yellow>Urja</h2></B>
+<B><h1 ALIGN="center">KJSCE</B></h1> -->
+<!-- <B><h2 ALIGN="center" ><font color=yellow>Urja</h2></B> -->
+<!-- <br> -->
+
+<div class="container-fluid bg-1 text-center">
+  <img src="../images/col.jpg" class="img-responsive img-circle margin" style="display:inline" alt="festphoto" width="350" height="350">
+  <h1>Urja</h1>
+</div>
 <br>
 <ul>
   <li><a href="../Logout.php">logout</a></li>
 
   <li><a href="../Extra/contact.html">Contact</a></li>
-  <li><a href="../Extra/Sponsors.html">Sponsors</a></li>
+  <li><a href="../Event/Lsponsors.php">Sponsors</a></li>
   <li><a href="../Event/LoggedEvent.php">Events</a></li>
-  <li><a href="#">Home</a></li>
+  <li><a href="LoggedinHome.php">Home</a></li>
 
 </ul>
 <br>
+
 
 
 <!-- First Container -->
@@ -49,7 +56,6 @@ if(isset($_SESSION['name'])){//for register ka message
   echo 'Welcome '.$_SESSION['name'].'!';
 }elseif (isset($_SESSION['user_name'])) { //for login ka message
   echo 'Welcome '.$_SESSION['user_name'].'!';
-  # code...
 }
 ?></h2></div>
 
